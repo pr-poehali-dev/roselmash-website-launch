@@ -62,18 +62,18 @@ const ProgramsSection = () => {
           {programs.map((program, index) => (
             <Card
               key={index}
-              className="hover:shadow-lg transition-shadow duration-300 border-l-4 border-l-blue-500"
+              className="hover:shadow-lg transition-shadow duration-300 border-l-4 border-l-corporate-coral"
             >
               <CardHeader>
                 <div className="flex items-center justify-between mb-4">
                   <Icon
                     name={program.icon as any}
                     size={32}
-                    className="text-blue-600"
+                    className="text-corporate-dark"
                   />
                   <Badge
                     variant="outline"
-                    className="text-green-600 border-green-600"
+                    className="text-corporate-coral border-corporate-coral"
                   >
                     {program.level}
                   </Badge>
@@ -103,7 +103,7 @@ const ProgramsSection = () => {
                         <Icon
                           name="ChevronRight"
                           size={14}
-                          className="text-blue-500"
+                          className="text-corporate-coral"
                         />
                         {feature}
                       </li>

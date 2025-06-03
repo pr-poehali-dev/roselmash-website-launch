@@ -41,7 +41,7 @@ const AdvantagesSection = () => {
   ];
 
   return (
-    <section className="py-16 px-4 bg-gradient-to-b from-blue-50 to-green-50">
+    <section className="py-16 px-4 bg-gradient-to-b from-gray-50 to-orange-50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4 font-montserrat">
@@ -60,7 +60,7 @@ const AdvantagesSection = () => {
             >
               <CardContent className="p-6 text-center">
                 <div className="mb-4">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-green-500 rounded-full flex items-center justify-center mx-auto">
+                  <div className="w-16 h-16 bg-gradient-to-br from-corporate-dark to-corporate-coral rounded-full flex items-center justify-center mx-auto">
                     <Icon
                       name={advantage.icon as any}
                       size={28}
@@ -87,25 +87,41 @@ const AdvantagesSection = () => {
               </h3>
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
-                  <Icon name="Calendar" size={20} className="text-blue-600" />
+                  <Icon
+                    name="Calendar"
+                    size={20}
+                    className="text-corporate-coral"
+                  />
                   <span>
                     <strong>Подача документов:</strong> до 25 июля
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Icon name="FileText" size={20} className="text-blue-600" />
+                  <Icon
+                    name="FileText"
+                    size={20}
+                    className="text-corporate-coral"
+                  />
                   <span>
                     <strong>Экзамены:</strong> математика, физика, русский язык
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Icon name="Users" size={20} className="text-blue-600" />
+                  <Icon
+                    name="Users"
+                    size={20}
+                    className="text-corporate-coral"
+                  />
                   <span>
                     <strong>Бюджетные места:</strong> 150 мест
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Icon name="Banknote" size={20} className="text-blue-600" />
+                  <Icon
+                    name="Banknote"
+                    size={20}
+                    className="text-corporate-coral"
+                  />
                   <span>
                     <strong>Стипендия:</strong> от 15 000 рублей
                   </span>

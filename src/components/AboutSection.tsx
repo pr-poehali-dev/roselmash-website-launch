@@ -36,15 +36,27 @@ const AboutSection = () => {
             </p>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <Icon name="CheckCircle" size={20} className="text-green-500" />
+                <Icon
+                  name="CheckCircle"
+                  size={20}
+                  className="text-corporate-coral"
+                />
                 <span>Практическое обучение на реальном производстве</span>
               </div>
               <div className="flex items-center gap-3">
-                <Icon name="CheckCircle" size={20} className="text-green-500" />
+                <Icon
+                  name="CheckCircle"
+                  size={20}
+                  className="text-corporate-coral"
+                />
                 <span>Современное оборудование и лаборатории</span>
               </div>
               <div className="flex items-center gap-3">
-                <Icon name="CheckCircle" size={20} className="text-green-500" />
+                <Icon
+                  name="CheckCircle"
+                  size={20}
+                  className="text-corporate-coral"
+                />
                 <span>Гарантированное трудоустройство в компании</span>
               </div>
             </div>
@@ -57,7 +69,7 @@ const AboutSection = () => {
               <Icon
                 name="Users"
                 size={32}
-                className="mx-auto mb-4 text-blue-600"
+                className="mx-auto mb-4 text-corporate-dark"
               />
               <div className="text-2xl font-bold text-gray-900 mb-2">1200+</div>
               <div className="text-gray-600">студентов</div>
@@ -68,7 +80,7 @@ const AboutSection = () => {
               <Icon
                 name="GraduationCap"
                 size={32}
-                className="mx-auto mb-4 text-green-600"
+                className="mx-auto mb-4 text-corporate-coral"
               />
               <div className="text-2xl font-bold text-gray-900 mb-2">50+</div>
               <div className="text-gray-600">преподавателей</div>
@@ -79,7 +91,7 @@ const AboutSection = () => {
               <Icon
                 name="Award"
                 size={32}
-                className="mx-auto mb-4 text-yellow-600"
+                className="mx-auto mb-4 text-corporate-coral"
               />
               <div className="text-2xl font-bold text-gray-900 mb-2">25+</div>
               <div className="text-gray-600">наград</div>
@@ -90,7 +102,7 @@ const AboutSection = () => {
               <Icon
                 name="Building"
                 size={32}
-                className="mx-auto mb-4 text-purple-600"
+                className="mx-auto mb-4 text-corporate-dark"
               />
               <div className="text-2xl font-bold text-gray-900 mb-2">12</div>
               <div className="text-gray-600">лабораторий</div>

@@ -52,7 +52,7 @@ const ContactSection = () => {
                   className="bg-gray-700 border-gray-600 text-white placeholder:text-gray-400 min-h-[100px]"
                 />
               </div>
-              <Button className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold">
+              <Button className="w-full bg-corporate-coral hover:bg-orange-600 text-white font-semibold">
                 <Icon name="Send" size={20} className="mr-2" />
                 Отправить заявку
               </Button>
@@ -67,7 +67,7 @@ const ContactSection = () => {
                   <Icon
                     name="MapPin"
                     size={24}
-                    className="text-green-400 mt-1"
+                    className="text-corporate-coral mt-1"
                   />
                   <div>
                     <div className="font-semibold">Адрес</div>
@@ -80,7 +80,7 @@ const ContactSection = () => {
                   <Icon
                     name="Phone"
                     size={24}
-                    className="text-green-400 mt-1"
+                    className="text-corporate-coral mt-1"
                   />
                   <div>
                     <div className="font-semibold">Телефон</div>
@@ -88,7 +88,11 @@ const ContactSection = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <Icon name="Mail" size={24} className="text-green-400 mt-1" />
+                  <Icon
+                    name="Mail"
+                    size={24}
+                    className="text-corporate-coral mt-1"
+                  />
                   <div>
                     <div className="font-semibold">Email</div>
                     <div className="text-gray-300">
@@ -100,7 +104,7 @@ const ContactSection = () => {
                   <Icon
                     name="Clock"
                     size={24}
-                    className="text-green-400 mt-1"
+                    className="text-corporate-coral mt-1"
                   />
                   <div>
                     <div className="font-semibold">Приемная комиссия</div>
@@ -116,14 +120,14 @@ const ContactSection = () => {
                 <Button
                   variant="outline"
                   size="icon"
-                  className="border-gray-600 text-gray-300 hover:text-white hover:bg-blue-600"
+                  className="border-gray-600 text-gray-300 hover:text-white hover:bg-corporate-dark"
                 >
                   <Icon name="MessageCircle" size={20} />
                 </Button>
                 <Button
                   variant="outline"
                   size="icon"
-                  className="border-gray-600 text-gray-300 hover:text-white hover:bg-blue-500"
+                  className="border-gray-600 text-gray-300 hover:text-white hover:bg-corporate-coral"
                 >
                   <Icon name="Share" size={20} />
                 </Button>
@@ -137,12 +141,12 @@ const ContactSection = () => {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-green-600 to-blue-600 p-6 rounded-lg">
+            <div className="bg-gradient-to-r from-corporate-coral to-corporate-dark p-6 rounded-lg">
               <h4 className="text-xl font-bold mb-2">День открытых дверей</h4>
               <p className="mb-4">15 мая 2024 в 10:00</p>
               <Button
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-blue-600"
+                className="border-white text-white hover:bg-white hover:text-corporate-dark"
               >
                 <Icon name="Calendar" size={20} className="mr-2" />
                 Записаться

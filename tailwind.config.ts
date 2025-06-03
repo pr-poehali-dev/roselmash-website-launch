@@ -23,6 +23,11 @@ export default {
         "open-sans": ["Open Sans", "sans-serif"],
       },
       colors: {
+        // Corporate colors
+        corporate: {
+          dark: "#4A4A52", // RGB 74/74/82
+          coral: "#E07966", // RGB 224/121/102
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
