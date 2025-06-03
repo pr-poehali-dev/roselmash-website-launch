@@ -1,27 +1,103 @@
-import React from 'react';
-import * as LucideIcons from 'lucide-react';
-import { LucideProps } from 'lucide-react';
+import {
+  Home,
+  User,
+  Settings,
+  Search,
+  Bell,
+  Heart,
+  Star,
+  Plus,
+  Minus,
+  X,
+  Check,
+  ChevronDown,
+  ChevronUp,
+  ChevronLeft,
+  ChevronRight,
+  Menu,
+  Mail,
+  Phone,
+  MapPin,
+  Calendar,
+  Clock,
+  Users,
+  Building,
+  Award,
+  GraduationCap,
+  BookOpen,
+  Play,
+  CheckCircle,
+  Cpu,
+  Cog,
+  Bot,
+  Briefcase,
+  DollarSign,
+  Factory,
+  Lightbulb,
+  Globe,
+  Trophy,
+  FileText,
+  Banknote,
+  Send,
+  MessageCircle,
+  Share,
+  Youtube,
+} from "lucide-react";
+import { LucideProps } from "lucide-react";
+
+const iconMap = {
+  Home,
+  User,
+  Settings,
+  Search,
+  Bell,
+  Heart,
+  Star,
+  Plus,
+  Minus,
+  X,
+  Check,
+  ChevronDown,
+  ChevronUp,
+  ChevronLeft,
+  ChevronRight,
+  Menu,
+  Mail,
+  Phone,
+  MapPin,
+  Calendar,
+  Clock,
+  Users,
+  Building,
+  Award,
+  GraduationCap,
+  BookOpen,
+  Play,
+  CheckCircle,
+  Cpu,
+  Cog,
+  Bot,
+  Briefcase,
+  DollarSign,
+  Factory,
+  Lightbulb,
+  Globe,
+  Trophy,
+  FileText,
+  Banknote,
+  Send,
+  MessageCircle,
+  Share,
+  Youtube,
+};
 
 interface IconProps extends LucideProps {
-  name: string;
-  fallback?: string;
+  name: keyof typeof iconMap;
+  fallback?: keyof typeof iconMap;
 }
 
-const Icon: React.FC<IconProps> = ({ name, fallback = 'CircleAlert', ...props }) => {
-  const IconComponent = (LucideIcons as Record<string, React.FC<LucideProps>>)[name];
-
-  if (!IconComponent) {
-    // Если иконка не найдена, используем fallback иконку
-    const FallbackIcon = (LucideIcons as Record<string, React.FC<LucideProps>>)[fallback];
-
-    // Если даже fallback не найден, возвращаем пустой span
-    if (!FallbackIcon) {
-      return <span className="text-xs text-gray-400">[icon]</span>;
-    }
-
-    return <FallbackIcon {...props} />;
-  }
-
+const Icon = ({ name, fallback = "X", ...props }: IconProps) => {
+  const IconComponent = iconMap[name] || iconMap[fallback];
   return <IconComponent {...props} />;
 };
 
