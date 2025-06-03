@@ -104,7 +104,7 @@ const AboutSection = () => {
                 size={32}
                 className="mx-auto mb-4 text-corporate-dark"
               />
-              <div className="text-2xl font-bold text-gray-900 mb-2">12</div>
+              <div className="text-2xl font-bold text-gray-900 mb-2">5</div>
               <div className="text-gray-600">лабораторий</div>
             </CardContent>
           </Card>

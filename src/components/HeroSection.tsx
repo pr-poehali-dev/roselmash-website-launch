@@ -4,7 +4,7 @@ import Icon from "@/components/ui/icon";
 const HeroSection = () => {
   return (
     <section className="relative bg-gradient-to-br from-corporate-dark to-corporate-coral text-white py-20 px-4 overflow-hidden">
-      <div className="absolute inset-0 bg-[#9799a6]"></div>
+      <div className="absolute inset-0 bg-[#e0796600]"></div>
       <div className="relative max-w-6xl mx-auto text-center">
         <div className="mb-8">
           <Icon name="Cpu" size={64} className="mx-auto mb-4 text-white/90" />
